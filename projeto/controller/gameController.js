@@ -31,7 +31,7 @@ const createGame = async (req , res) => {
     }
 }
 
-const uptadeGame = async (req , res) => {
+const updateGame = async (req , res) => {
     try {
         const {id} = req.params
         const game = await Game.findById(id)
@@ -65,4 +65,4 @@ const deleteGame = async (req , res) => {
     }
 }
 
-module.exports = {createGame, uptadeGame, deleteGame, getGame}
+module.exports = {createGame, updateGame, deleteGame, getGame}

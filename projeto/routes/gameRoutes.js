@@ -1,7 +1,5 @@
 const express = require('express')
 const router = express.Router()
-const Game = require('../models/jogos')
-
 const Game = require('../controller/gameController')
 
 router.get('/games/:id' , Game.getGame)
