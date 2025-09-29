@@ -21,7 +21,6 @@ const createGame = async (req , res) => {
     try {
         const { nome ,ano , empresa , genero, preco } = req.body
         const newGame = new Game({nome, empresa, ano , genero , preco})
-
         await newGame.save()
         res.status(201).json(newGame)
     } catch (e) {
